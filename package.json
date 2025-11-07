@@ -1,0 +1,44 @@
+{
+  "name": "@chetanmanjunath93/rte",
+  "version": "1.0.0",
+  "description": "A highly configurable Rich Text Editor React component using MUI themes and styles",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "example": "cd example && npm run dev"
+  },
+  "keywords": [
+    "react",
+    "rich-text-editor",
+    "mui",
+    "material-ui",
+    "wysiwyg",
+    "editor",
+    "draft-js"
+  ],
+  "author": "Chetan Manjunath",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chetanmanjunath93/RTE"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
+    "draft-js": "^0.11.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-draft-wysiwyg": "^1.15.0"
+  },
+  "devDependencies": {
+    "@types/draft-js": "^0.11.18",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/react-draft-wysiwyg": "^1.13.8",
+    "typescript": "^5.9.3"
+  }
+}
