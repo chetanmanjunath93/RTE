@@ -191,6 +191,8 @@ export const RichTextEditor: React.FC<RichTextEditorProps> = ({
   );
 
   // Initialize editor with value or initial content
+  // This only runs on mount to set the initial state
+  // After that, the component is controlled via handleEditorStateChange
   useEffect(() => {
     if (value) {
       try {
@@ -207,6 +209,7 @@ export const RichTextEditor: React.FC<RichTextEditorProps> = ({
         console.error('Failed to parse initial content:', e);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleEditorStateChange = (state: EditorState) => {
